@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/gemCart.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo|VT323');
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Crystal Collectors</h1>
+    </header>
+    <div class="container">
+        <div class="rules">
+            <p>You will be given a goal at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+                score.
+            </p>
+            <p>You win the game by matching your total score to the goal. You lose the game if your total score goes
+                above the goal.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the values of each crystal will change.</p>
+        </div>
+        <div class="board">
+            <div class="display">
+                <h2>Goal</h2>
+                <p id="goal"></p>
+            </div>
+            <div class="display">
+                <h2>Score</h2>
+                <p id="score"></p>
+            </div>
+        </div>
+        <div class="board">
+            <div class="display">
+                <h2>Wins</h2>
+                <p>
+                    <span id="wins"></span>
+                </p>
+            </div>
+            <div class="display">
+                <h2>Loses</h2>
+                <p>
+                    <span id="loses"></span>
+                </p>
+            </div>
+        </div>
+        <div class="crystals">
+            <img src="assets/images/PurpleGem.png" id="1" alt="Purple Gem">
+            <img src="assets/images/TriGem.png" id="2" alt="Tri Gem">
+            <img src="assets/images/RubyGem.png" id="3" alt="Ruby Gem">
+            <img src="assets/images/StarGem.png" id="4" alt="Star Gem">
+        </div>
+    </div>
+</body>
+
+</html>
